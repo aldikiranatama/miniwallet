@@ -1,10 +1,12 @@
 # miniwallet
 
 ## installation
-virtualenv .venv
-pip install requirement.txt
-python manage.py runserver
+- clone repo first
+- cd to repo folder
+- virtualenv .venv
+- pip install -r requirement.txt
+- python manage.py runserver
 
 ## db migrate
-python manage.py api makemigrations
-python manage.py api migrate
+- python manage.py api makemigrations
+- python manage.py api migrate

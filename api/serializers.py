@@ -78,7 +78,7 @@ class WalletSerializer(serializers.ModelSerializer):
                 raise serializers.ValidationError(
                     {"error": "already disabled"})
 
-            if is_disable:
+            if not is_disable:
                 raise serializers.ValidationError(
                     {"error": "is_disable true required"})
 

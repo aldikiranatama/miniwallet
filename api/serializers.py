@@ -146,7 +146,7 @@ class WithdrawalSerializer(serializers.ModelSerializer):
                 {"error": "wallet disabled"}
             )
 
-        if wallet_balance < int(data.get('amount')[0]):
+        if wallet_balance < int(data.get('amount')):
             raise serializers.ValidationError(
                 {"error": "not enough balance"}
             )
